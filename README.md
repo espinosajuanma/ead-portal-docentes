@@ -31,7 +31,7 @@ npm install
 - `/moodle`: Backups de los recursos de tipo página que se utilizaron
 dentro del aula virtual
 - `/assets`: Se utilizaron íconos de una página de terceros que tuvieron que
-ser convertidos a 
+ser convertidos a color blanco. Se guardan las dos versiones.
 
 ### Comandos
 
