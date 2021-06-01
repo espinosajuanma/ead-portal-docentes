@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+:root {
+    --PLOMO: #333333;
+    --PLATA: #F3F3F3;
+    --BLANCO: #FFFFFF;
+    --NARANJA: #E74229;
+    --CYAN: #5DBDB5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-rendering: geometricPrecision;
+}
+
+html {
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    background-color: var(--PLATA);
+    color: var(--PLOMO);
+    overflow-y: scroll;
+}
+
+@media(min-width: 480px) {
+    html {
+        font-size: 14pt;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.25;
+    font-size: 1rem;
+}
+
+h1 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+}
+
+nav {
+    font-family: 'Alegreya Sans', sans-serif;
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.01rem;
+}
+
+nav a {
+    font-weight: 700;
+    padding: 0 1rem 0 1rem;
+}
+
+nav a {
+    color: var(--BLANCO);
+}
+
+nav a img {
+    display: inline;
+    width: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+a {
+    font-weight: bold;
+    color: var(--NARANJA);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--PLOMO);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+ol {
+    margin-left: 1rem;
+}
+
+li > ul {
+    padding-left: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+    margin-bottom: inherit;
+}
+
+ul li:before {
+    content: "\2013"; /* note: extra space needed because first is consumed by css parser */
+    position: absolute;
+    margin-left: -1rem;
+}
+
+ul.double-spaced li {
+    margin-top: 1rem;
+}
+
+img, video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+video {
+    margin-bottom: 1rem;
+}
+
+hr {
+    position: relative;
+    opacity: 0.25;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--PLOMO);
+}
+
+/* Clases */
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.small p {
+    margin-bottom: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.gap {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.btn-primary {
+    font-weight: bold;
+    color: var(--PLATA);
+    background-color: var(--CYAN);
+    border-color: var(--CYAN);
+}
+
+.btn-primary:hover {
+    background-color: var(--NARANJA);
+    border-color: var(--NARANJA);
+}
+
+/* Elementos */
+
+#content {
+    max-width: 35rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+#nav-bg {
+    margin: 0;
+    padding: 0.25rem 1 rem;
+    background-color: var(--NARANJA);
+}

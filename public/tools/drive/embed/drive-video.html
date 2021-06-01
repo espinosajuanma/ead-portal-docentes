@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>EaD - Portal de herramientas</title>
+</head>
+
+<body>
+    <label for="urlDrive" class="form-label">Vínculo</label>
+    <input type="text" class="form-control" id="urlDrive" placeholder="Inserte el vínculo aquí">
+
+    <br>
+    <button onclick="generar()" class="btn btn-primary" style="margin: auto;">Generar código</button>
+
+    <h1 class="subtitle">Código</h1>
+    <textarea id="codigo" class="form-control" cols="75" rows="2"></textarea><br>
+    <button onclick="copiar()" class="btn btn-primary" style="margin: auto;">Copiar código</button>
+
+    <h1 class="subtitle">Vista previa</h1>
+    <div id="vista-previa"></div>
+
+    <script src="../js/convert-url.js"></script>
+</body>
+
+</html>

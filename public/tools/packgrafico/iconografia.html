@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>EaD - Portal de herramientas</title>
+</head>
+
+<body>
+    <div id="nav-bg">
+        <nav>
+            <a title="Página de inicio" href="/" rel="nofollow">Inicio</a></li>
+            <a title="Herramientas del Pack Gráfico" href="/tools/packgrafico">Pack gráfico</a>
+            <a title="Herramientas para Google Drive" href="/tools/drive">Google Drive</a>
+            <a title="Documentos" href="/docs">Documentos</a>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h1>Iconografía de llamado a la acción</h1>
+
+        <p>
+            Paquete de íconos para utilizar en los recursos de moodle, tipo página, etiqueta, foro, etc.
+        </p>
+
+        <label for="texto" class="form-label">Texto</label>
+        <input type="text" class="form-control" id="texto" value="Hipervínculo">
+
+        <label for="icono">Seleccionar ícono</label>
+        <select class="form-control" id="icono" aria-label="Seleccionar ícono">
+            <option value="101-cursor" selected>Selecciona un ícono</option>
+        </select>
+
+        <label for="color" class="form-label">Color</label>
+        <div class="form-check" id="color">
+            <input class="form-check-input" name="color" type="radio" id="colorNegro" checked value="#333333">
+            <label class="form-check-label" for="colorNegro">
+                Negro
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="color" type="radio" id="colorNaranja" value="#E74229">
+            <label class="form-check-label" for="colorNaranja">
+                Naranja
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="color" type="radio" id="colorCyan" value="#5DBDB5">
+            <label class="form-check-label" for="colorCyan">
+                Cyan
+            </label>
+        </div>
+
+        <h1 class="subtitle">Vista previa</h1>
+        <div id="canvas"></div>
+
+        <button onclick="saveFile()" class="btn btn-primary" style="margin: auto;">Guardar imagen</button>
+
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+        <script src="./js/icons.js"></script>
+        <script src="./js/iconografia.js"></script>
+
+        <hr>
+        <div class="small center">
+            <p>Desarrollado por Área de Educación a Distancia</p>
+            <p>Consultas: <a href="mailto:ead.enviomaterial@gmail.com">ead.enviomaterial@gmail.com</a></p>
+            <p>FCPyS - UNCuyo</p>
+            <img src="/assets/img/favicon.png" width="32">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

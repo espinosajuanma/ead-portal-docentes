@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>EaD - Portal de herramientas</title>
+</head>
+
+<body>
+    <div id="nav-bg">
+        <nav>
+            <a title="Página de inicio" href="/" rel="nofollow">Inicio</a></li>
+            <a title="Herramientas del Pack Gráfico" href="/tools/packgrafico">Pack gráfico</a>
+            <a title="Herramientas para Google Drive" href="/tools/drive">Google Drive</a>
+            <a title="Documentos" href="/docs">Documentos</a>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h1>Embeber video de Google Drive</h1>
+
+        <p>
+            Google Drive es una herramienta de terceros que nos permite subir documentos pesados para no sobrecargar el
+            aula virtual Moodle. Google nos permite generar un vínculo para compartir pero no nos brinda un código para
+            embeber en Moodle.
+        </p>
+
+        <p>
+            Hemos desarrollado un breve tutorial con un formulario, para que ingrese el vínculo del video de Google
+            Drive y generar automáticamente el código que debes copiar y pegar en su aula virtual.
+        </p>
+
+        <h1 class="subtitle">Instructivo</h1>
+
+        <p>Abra con <b>Google Drive</b> el video que quiera incrustar en el Aula virtual. A la derecha hay unas opciones
+            elija la que dice <i>«Compartir»</i></p>
+        <img width="70%" src="./assets/img/01-compartir.png">
+
+        <p>Cuando se abra la ventana de compartir elija la opción <i>«Cambiar a cualquier persona que tenga el
+                vínculo»</i></p>
+        <img width="70%" src="./assets/img/02-compartir.png">
+
+        <p>Google Drive le dará una dirección URL que debe copiar. Ingrese esa dirección para generar el código HTML.
+        </p>
+        <img width="70%" src="./assets/img/03-compartir.png">
+
+        <h1 class="subtitle">Generar código</h1>
+
+        <label for="urlDrive" class="form-label">Vínculo</label>
+        <input type="text" class="form-control" id="urlDrive" placeholder="Inserte el vínculo aquí">
+
+        <br>
+        <button onclick="generar()" class="btn btn-primary" style="margin: auto;">Generar código</button>
+
+        <h1 class="subtitle">Código</h1>
+        <textarea id="codigo" class="form-control" cols="75" rows="2"></textarea><br>
+        <button onclick="copiar()" class="btn btn-primary" style="margin: auto;">Copiar código</button>
+
+        <h1 class="subtitle">Vista previa</h1>
+        <div id="vista-previa"></div>
+
+
+    </div>
+    <script src="./js/convert-url.js"></script>
+
+    <hr>
+    <div class="small center">
+        <p>Desarrollado por Área de Educación a Distancia</p>
+        <p>Consultas: <a href="mailto:ead.enviomaterial@gmail.com">ead.enviomaterial@gmail.com</a></p>
+        <p>FCPyS - UNCuyo</p>
+        <img src="/assets/img/favicon.png" width="32">
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
